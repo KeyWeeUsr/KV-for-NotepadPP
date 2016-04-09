@@ -1,0 +1,33 @@
+#:import Win kivy.core.window.Window
+#:import isdir os.path.isdir
+#:set variable value
+#:kivy 1.9.2
+
+<Rule>:
+    ## To Do: ...
+    canvas.before:
+        Color:
+            rgb: (1, 1, 1)
+        Rectangle:
+            pos: self.pos
+    canvas.after:
+        Line:
+            points: [1, 1, 1, 1]
+        PushMatrix()
+
+    Screen:
+        id: 'myscreen'
+        name: 'scr1'
+        Custom:
+            text: 'Hello World!'
+            font_size: 30.5
+            font_name: root.path + '/font.ttf'
+            size_hint: None, None
+            pos_hint: {'top': 1.45, 'right': 1.1}
+            height: self.texture_size[1] * 3.5
+            on_release: root.current = 'scr2'
+            on_release: root.func(self.text, 0)
+
+<Custom@ButtonBehavior+AsyncImage>:
+    on_press: self.color = (1, 1, 1, 0.4)
+    size: map(lambda x: ...)
