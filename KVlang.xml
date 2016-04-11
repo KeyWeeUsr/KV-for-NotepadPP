@@ -1,6 +1,6 @@
 <!--
 KV for Notepad++ - Syntax Highlighting for Kivy files in Notepad++
-Version: 0.1
+Version: 0.2
 Copyright (C) 2016, KeyWeeUsr(Peter Badida) <keyweeusr@gmail.com>
 License: MIT
 
@@ -46,7 +46,7 @@ of the Software.
             <Keywords name="Folders in comment, middle"></Keywords>
             <Keywords name="Folders in comment, close"></Keywords>
             <Keywords name="Keywords1">###PyKW and as assert break class continue def del elif else except exec False finally for from global if import in is lambda None not or pass print raise return triple True try while with yield</Keywords>
-            <Keywords name="Keywords2">###Properties on_ name id rgb rgba pos source size size_hint pos pos_hint text font_name height width halign valign text_size orientation cols padding spacing font_size points current color</Keywords>
+            <Keywords name="Keywords2">###Properties accordion active active_norm_pos adapter after allow_fullscreen allow_stretch anchors anchor_x anchor_y angle angle_end angle_start anim_available anim_delay anim_duration anim_func anim_index anim_loop annotations attach_to auto_bring_to_front auto_dismiss auto_scale available_layouts axis background background_border background_color background_disabled background_disabled_normal background_disabled_selected background_normal background_selected bbox before bezier bezier_precision bold border callback cap cap_precision center center_x center_y children chunk_size circle clearcolor clear_color clear_depth clear_stencil close cls collapse collapse_alpha color color_selected cols cols_minimum col_default_width col_force_default container container_title content content_size counter current current_screen dash_length dash_offset data device direction dirselect disabled disabled_color displacement display_border docked double_tap_time do_collide_after_children do_rotation do_scale do_translation do_translation_x do_translation_y dpos drag_threshold dsx dsy dsz duration dx dy dz edge_damping effects ellipse eos error even_color fbo fbo_list filename files file_encodings file_system filters filter_dirs flip_vertical font_blended font_hinting font_kerning font_name font_size friction fullscreen func_op glsl grab_current halign has_after has_before height hex_color hide_root hsv id ids image image_loading image_overlay_play image_pause image_play image_ratio image_stop image_volumehigh image_volumelow image_volumemedium image_volumemuted indent_level indent_start index indices inimum_height is_active is_double_tap is_finished is_leaf is_loaded is_manual is_mouse_scrolling is_open is_selected is_touch is_triple_tap italic joint joint_precision keep_data keep_ratio key_background_color key_background_down key_background_normal key_border key_disabled_background_normal key_margin layout layout_path length level line_height loaded load_func loop manager margin_hint markup matrix max max_history max_lines min minimum_height minimum_size minimum_width min_distance min_overscroll min_space min_velocity mipmap mipmaps mode multiselect name nocache nodes norm_image_size no_selection odd odd_color on_ opacity opos options order orientation origin osx osy osz overdraw_width overscroll padding padding_x padding_y page parent parent_node path pixels pixel_size play points pointsize pos position pos_hint ppos profile progress_cls proxy_ref psx psy psz push_attrs_stack radius range record record_attrs record_profile_mask rectangle refs req_body req_headers reset_context resolution resp_headers resp_status result rgb rgba right root rootpath root_options rotation rounded_rectangle round_value rowlength rows rows_minimum row_default_height row_force_default scale scale_max scale_min screens screen_in screen_names screen_out scroll segments selected_node selection separator_color separator_height shader shape shorten shorten_from show_hidden size size_hint size_hint_x size_hint_y sort_func source source_stack spacing split_str spos spring_constant stack start state status step strikethrough strip swipe_threshold sx sy sz target target_stack target_widget text texture texture_size text_size tex_coords thumbnail time_end time_start time_update title title_align title_args title_color title_font title_size title_template top total touch_control touch_distance transform transform_inv transition transition_progress transition_state translation_touches triple_tap_time uid underline unicode_errors uniforms url use_parent_modelview use_parent_projection valign value value_normalized value_pos velocity vertices view_list view_mode volume wheel width window x xy xyz y z</Keywords>
             <Keywords name="Keywords3">###Widgets&#x000D;&#x000A;AbstractView AsyncImage Bezier BindTexture BorderImage BoxLayout Button Callback Camera canvas Carousel ClearBuffers ClearColor Clock CodeInput Color ColorPicker DropDown EffectWidget Ellipse Fbo FileChooser FloatLayout Focus GridLayout ChangeState CheckBox Image Label Layout Line ListView LoadIdentity Mesh ModalView PageLayout Point PopMatrix PopState Popup PushMatrix PushState Quad Rectangle RelativeLayout Rotate Scale Scatter Screen ScrollView SelectableView Settings Slider SmoothLine Spinner Splitter StackLayout StencilPop StencilPush StencilUnUse StencilUse StencilView Switch TabbedPanel TextInput Togglebutton Translate TreeView Triangle UpdateNormalMatrix Video Widget Window</Keywords>
             <Keywords name="Keywords4">###KVKW root app self before after parent</Keywords>
             <Keywords name="Keywords5">###Pre #:import #:set #:kivy</Keywords>
@@ -56,30 +56,30 @@ of the Software.
             <Keywords name="Delimiters">00&lt; 01 02&gt;: 03&apos; 03&quot; 04 05&apos; 05&quot; 06[ 06( 06{ 07 08] 08) 08} 09 10 11 12 13 14 15 16 17 18 19 20: 21 22 23</Keywords>
         </KeywordLists>
         <Styles>
-            <WordsStyle name="DEFAULT" fgColor="B7975D" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="COMMENTS" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="DEFAULT" fgColor="B7975D" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
             <WordsStyle name="LINE COMMENTS" fgColor="FF3333" bgColor="FFFFFF" fontName="" fontStyle="2" nesting="0" />
-            <WordsStyle name="NUMBERS" fgColor="8080FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS1" fgColor="FFAA55" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS2" fgColor="FAC800" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS3" fgColor="DB6500" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS4" fgColor="DD1606" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS5" fgColor="FF8000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS6" fgColor="8080FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="OPERATORS" fgColor="B7975D" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS1" fgColor="FF9122" bgColor="FFFFFF" fontStyle="0" nesting="16781312" />
-            <WordsStyle name="DELIMITERS2" fgColor="CA6500" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS3" fgColor="FF8040" bgColor="FFFFFF" fontStyle="0" nesting="67118080" />
-            <WordsStyle name="DELIMITERS4" fgColor="00FF80" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS5" fgColor="00FF80" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS6" fgColor="00FF80" bgColor="FFFFFF" fontStyle="0" nesting="67108864" />
-            <WordsStyle name="DELIMITERS7" fgColor="FFFF80" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="8080FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="FFAA55" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="FAC800" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="DB6500" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="DD1606" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="8080FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="B7975D" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="FF9122" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="16781312" />
+            <WordsStyle name="DELIMITERS2" fgColor="CA6500" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="FF8040" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="67118080" />
+            <WordsStyle name="DELIMITERS4" fgColor="00FF80" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="00FF80" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="00FF80" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="67108864" />
+            <WordsStyle name="DELIMITERS7" fgColor="FFFF80" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
         </Styles>
     </UserLang>
 </NotepadPlus>
